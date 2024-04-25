@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = prompt("Ingrese su nombre: ");
+        let cantidadpreguntas = parseInt(prompt("Ingrese la cantidad de preguntas que se le realizaron: "));
+        let preguntascorrectas = parseInt(prompt("Ingrese la cantidad de preguntas que contesto correctamente: "));
+
+        let porcentaje = (preguntascorrectas / cantidadpreguntas ) * 100;
+
+        if (porcentaje >= 90){
+            document.write("Usted pertenece al nivel superior");
+        }
+        else if (porcentaje >= 75 && porcentaje < 90){
+            document.write("Usted pertenece al nivel medio");
+        }
+        else if (porcentaje >= 50 && porcentaje < 75){
+            document.write("Usted pertenece al nivel regular");
+        }
+        else if (porcentaje < 50){
+            document.write("Usted esta fuera de nivel");
+        }
+    </script>
+</body>
+</html>
